@@ -300,7 +300,8 @@ header {
       rgba($black, 0.7),
       rgba($black, 0.4)
     ),
-    url("/assets/pexels-bruno-salvadori-2269872.jpg") no-repeat center;
+    url("/monstercat-audio-player/assets/pexels-bruno-salvadori-2269872.jpg")
+      no-repeat center;
   background-size: cover;
 }
 
@@ -319,8 +320,8 @@ header {
   .image-container {
     width: 350px;
     height: 350px;
-    background: url("/assets/pexels-bruno-salvadori-2269872.jpg") no-repeat
-      center;
+    background: url("/monstercat-audio-player/assets/pexels-bruno-salvadori-2269872.jpg")
+      no-repeat center;
     background-size: cover;
   }
 
@@ -558,6 +559,10 @@ header {
 
       @include miniLaptop {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      @include phone {
+        grid-template-columns: 1fr 1fr 1fr;
       }
     }
   }
