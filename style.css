@@ -41,6 +41,7 @@ nav .nav-links {
 }
 @media screen and (max-width: 970px) {
   nav .nav-links {
+    display: none;
     position: absolute;
     min-width: 50vw;
     height: 80vh;
@@ -383,7 +384,7 @@ header {
   background: #fdfdfd;
   width: 60vw;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   padding: 40px 30px;
   opacity: 0;
@@ -396,7 +397,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .second-row-container .credit-container {
-    min-height: 70vh;
+    min-height: 40vh;
   }
 }
 .second-row-container .credit-container h1 {
@@ -404,12 +405,30 @@ header {
   color: #383838;
   font-size: 2.3rem;
 }
+@media screen and (max-width: 768px) {
+  .second-row-container .credit-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 .second-row-container .credit-container .container {
   display: flex;
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .second-row-container .credit-container .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .second-row-container .credit-container .left {
   margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .second-row-container .credit-container .left {
+    margin-right: 0px;
+  }
 }
 .second-row-container .credit-container .left a {
   display: inline-block;
@@ -440,6 +459,12 @@ header {
   letter-spacing: normal;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .second-row-container .credit-container .right p {
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 .second-row-container .credit-container .right textarea {
   background: rgba(0, 0, 0, 0.05);
@@ -616,6 +641,7 @@ header {
 .show-nav {
   transform: translateX(0%) !important;
   transition: transform 750ms ease !important;
+  display: flex !important;
 }
 
 .show-progress {

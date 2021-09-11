@@ -44,6 +44,7 @@ nav {
     position: relative;
 
     @include mini {
+      display: none;
       position: absolute;
       min-width: 50vw;
       height: 80vh;
@@ -417,7 +418,7 @@ header {
     background: $white;
     width: 60vw;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     padding: 40px 30px;
     opacity: 0;
@@ -428,22 +429,37 @@ header {
     }
 
     @include tablet {
-      min-height: 70vh;
+      min-height: 40vh;
     }
 
     h1 {
       margin-bottom: 20px;
       color: $gray;
       font-size: 2.3rem;
+
+      @include tablet {
+        font-size: 1.5rem;
+        text-align: center;
+      }
     }
 
     .container {
       display: flex;
       justify-content: flex-start;
+
+      @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .left {
       margin-right: 50px;
+
+      @include tablet {
+        margin-right: 0px;
+      }
       a {
         display: inline-block;
         text-decoration: none;
@@ -479,6 +495,11 @@ header {
         letter-spacing: normal;
         margin: 0;
         padding: 0;
+
+        @include tablet {
+          text-align: center;
+          margin-top: 10px;
+        }
       }
 
       textarea {
@@ -672,6 +693,7 @@ header {
 .show-nav {
   transform: translateX(0%) !important;
   transition: transform 750ms ease !important;
+  display: flex !important;
 }
 
 .show-progress {
