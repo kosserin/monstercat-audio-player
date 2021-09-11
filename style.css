@@ -276,7 +276,7 @@ header {
   width: 100vw;
   min-height: 130vh;
   padding-bottom: 100px;
-  background: linear-gradient(to top, black, black, black, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../assets/pexels-bruno-salvadori-2269872.jpg") no-repeat center;
+  background: linear-gradient(to top, black, black, black, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("/assets/pexels-bruno-salvadori-2269872.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -296,7 +296,7 @@ header {
 .first-row-container .image-container {
   width: 350px;
   height: 350px;
-  background: url("../assets/pexels-bruno-salvadori-2269872.jpg") no-repeat center;
+  background: url("/assets/pexels-bruno-salvadori-2269872.jpg") no-repeat center;
   background-size: cover;
 }
 .first-row-container .text-container {
