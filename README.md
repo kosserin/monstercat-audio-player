@@ -1,5 +1,6 @@
 # Monstercat Audio Player
 Project includes custom audio player that plays song you choose from album shown. Website has one page and is part of https://www.frontendpractice.com/ challenge.
+Here's link to live preview: https://kosserin.github.io/monstercat-audio-player/
 
 Technologies used in making this page are:
 - HTML
